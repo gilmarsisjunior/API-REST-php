@@ -24,7 +24,7 @@ if ($_GET['url']) {
 
             echo '<pre>';
             print_r($response);
-            echo '<pre/>';
+            echo '<pre/>';  
 
             } 
             catch (\Exception $e) {

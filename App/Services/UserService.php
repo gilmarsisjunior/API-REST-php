@@ -15,4 +15,14 @@ use App\Models\User;
                return User::getAllUser();
            }
         }
+
+        public function post()
+        {   $data = $_POST;
+            return User::insert($data);
+        }
+
+        public function delete($id)
+        {
+            return User::delete($id);
+        }
     }
